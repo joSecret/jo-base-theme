@@ -1,11 +1,11 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'Info cerute de la Design Team'
+description: 'Lista informatilor de care e bine sa le cunoastem pina a incepe lucru la proiect pe partea de Frontend'
 pubDate: 'Jan 06 2024'
-heroImage: '/blog/markdown_style_guide_placeholder.jpg'
+heroImage: '/blog/design_team_placeholder.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Lista informatilor de care e bine sa le cunoastem pina a incepe lucru la proiect pe partea de Frontend
 
 ## Headings
 
