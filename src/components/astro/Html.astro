@@ -1,0 +1,24 @@
+---
+import BaseHead from "./BaseHead.astro";
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body class="page--body">
+    <slot />
+  </body>
+</html>
+
+<style>
+  .page--body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+</style>

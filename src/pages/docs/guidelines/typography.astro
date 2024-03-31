@@ -1,0 +1,23 @@
+---
+import Layout from "../../../layouts/docs/Docs.astro";
+
+const description =
+  "Note: all values expressed in pixels are in fact dynamically converted from rem values. The conversion depends on the settings of your browser.";
+---
+
+<Layout title="Typography" description={description}>
+  <p class="description">
+    Note: all values expressed in pixels are in fact dynamically converted from
+    rem values. The conversion depends on the settings of your browser.
+
+    <h2>Typeface</h2>
+
+    <p>
+      Arial is the standard typeface for the websites under the European
+      Commission domain. The san serif typeface family is versatile and
+      universal.
+    </p>
+
+    <code lang="css"> font-family: "Arial", sans-serif;</code>
+  </p>
+</Layout>

@@ -1,0 +1,10 @@
+---
+const { id, label, ...props } = Astro.props;
+---
+
+<div class=`block block-${id}`>
+  {label && <div class="block--title">{label}</div>}
+  <div class="block--content">
+    <slot />
+  </div>
+</div>

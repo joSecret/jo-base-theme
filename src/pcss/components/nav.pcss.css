@@ -1,0 +1,18 @@
+.nav {
+  --_nav-link--c: var(--nav-link--c, var(--link-c));
+  --_nav-link--c_a: var(--c-primary);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  .nav--link {
+    --link-c: var(--_nav-link--c);
+    --link-decoration: var(--nav-link--decoration, none);
+
+    &.active {
+      color: var(--_nav-link--c_a);
+    }
+  }
+}

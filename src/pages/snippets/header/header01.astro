@@ -1,0 +1,28 @@
+---
+import "./header01.pcss";
+import SnippetsLayout from "@layouts/snippets/Snippets.astro";
+---
+
+<SnippetsLayout>
+  <header>
+    <div class="region--branding">Logo</div>
+
+    <div class="region--nav_main">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about Me">About me</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Testimonials</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="region--nav_additional">
+      <a href="/" class="btn btn-primary">Download CV</a>
+    </div>
+    <div class="region--header"></div>
+  </header>
+</SnippetsLayout>

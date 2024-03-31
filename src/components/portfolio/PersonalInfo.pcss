@@ -1,0 +1,74 @@
+.section--me {
+  --_s-me--s: 16px;
+  --_s-me--s2: 24px;
+  --_s-me--bg: var(--c-gray-800);
+  --_s-me--bg2: var(--body-bg);
+  --_s-me--img--w: 88px;
+
+  padding-block: var(--_s-me--s2) var(--_s-me--s);
+
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--_s-me--bg),
+    var(--_s-me--bg) 2px,
+    var(--_s-me--bg2) 2px,
+    var(--_s-me--bg2) 8px
+  );
+
+  .wrap {
+    display: grid;
+    gap: var(--_s-me--s) var(--_s-me--s2);
+  }
+
+  .me--image {
+    justify-self: center;
+    overflow: hidden;
+    width: var(--_s-me--img--w);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  *[class*="w--"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--_s-me--s2);
+  }
+
+  .me--name {
+    color: var(--c-white);
+  }
+
+  @media (--lg) {
+    --_s-me--img--w: 150px;
+
+    .wrap {
+      gap: var(--_s-me--s) var(--_s-me--s2);
+      grid-template-columns: var(--_s-me--img--w) 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "img name"
+        "img grData";
+    }
+
+    .me--image {
+      grid-area: img;
+    }
+
+    .w--name {
+      grid-area: name;
+      align-self: end;
+    }
+
+    .w--data {
+      grid-area: grData;
+      align-self: start;
+    }
+  }
+}

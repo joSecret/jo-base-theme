@@ -1,39 +1,20 @@
 ---
-import "../../pcss/components/badge.pcss.css";
+import Layout from "@layouts/main/default.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-
-import BaseHead from "../../components/astro/BaseHead.astro";
-import Header from "../../components/frontpage/Header.astro";
-import Footer from "../../components/frontpage/Footer.astro";
+import { SITE_TITLE } from "@/consts";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <main>
-      <a class="" href="https://github.com/joSecret/jo-base-theme">
-        <span class="badge badge-primary">v1.0.beta</span>
-      </a>
+<Layout>
+  <a class="" href="https://github.com/joSecret/jo-base-theme">
+    <span class="badge badge-primary">v1.0.beta</span>
+  </a>
 
-      <h1>{SITE_TITLE}.Docs</h1>
-    </main>
-    <Footer />
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        min-height: 100dvh;
+  <h1>{SITE_TITLE}.Docs</h1>
+  <h2>Build as frameworks from the ground up</h2>
 
-        & > main {
-          flex-grow: 1;
-        }
-      }
-    </style>
-  </body>
-</html>
+  <ul>
+    <li>
+      <a href="/jo-base-theme/docs/guidelines/typography">Typeography</a>
+    </li>
+  </ul>
+</Layout>

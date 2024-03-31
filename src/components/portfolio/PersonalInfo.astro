@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+import "./PersonalInfo.pcss";
+
+import personal from "@img/personal.jpg";
+---
+
+<div class="section section--me container-grid">
+  <div class="wrap">
+    <div class="me--image">
+      <Image src={personal} alt="My photo" width={526} height={526} />
+    </div>
+
+    <div class="w--name">
+      <h1 class="me--name">Ion Obreja</h1>
+      <div class="available">Available for work</div>
+    </div>
+
+    <div class="w--data">
+      <div class="me--job">Frotend Developer</div>
+      <div class="me--location">Moldova</div>
+      <div class="me--email">E-Mail</div>
+      <div class="me--social">Linkedin</div>
+    </div>
+  </div>
+</div>
