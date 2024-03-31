@@ -1,4 +1,4 @@
-# Jo Starter Kit: Blog
+# Jo Starter Kit + Blog
 
 Features:
 - ✅ Minimal styling (make it your own!)
@@ -16,9 +16,20 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 ├── src/
 │   ├── components/
+│   │   ├── astro/
+│   │   ├── main/
+│   │   ├── docs/
+│   │   └── snippets/
 │   ├── content/
+│   │   ├── blog
+│   │   └── docs/
 │   ├── layouts/
+│   │   ├── main/
+│   │   ├── docs/
+│   │   └── snippets/
 │   └── pages/
+│   │   ├── docs/
+│   │   └── snippets/
 ├── astro.config.mjs
 ├── README.md
 ├── package.json
